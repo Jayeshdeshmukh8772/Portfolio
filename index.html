@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Jayesh Deshmukh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="toggle-switch">
+        <label>
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jayeshdeshmukh8772/" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://x.com/Jayesh_D_8772?s=09" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="w-4/5 mx-auto px-4 py-16">
+      <!-- <section id="home" class="w-full px-4"> -->
+      <h1>Jayesh Deshmukh</h1>
+      <div class="text-2xl md:text-4xl font-medium text-muted-foreground h-16 flex items-center justify-center">
+        <span>I'm a </span>
+        <span class="ml-3 gradient-text font-bold min-w-[300px] text-left" id="role-text">Problem Solver</span>
+      </div>
+      <h2>Engineering - Information Technology</h2>
+      <p>Welcome to my portfolio website!</p>
+      <div class="home-buttons">
+        <a href="#projects" class="btn primary-btn">See My Work</a>
+        <a href="Jayesh Deshmukh Resume .pdf" class="btn secondary-btn" download>Download Resume</a>
+        <a href="#contact" class="btn accent-btn">Let's Get Connected</a>
+      </div>
+    </section>
+    <section id="about" class="w-4/5 mx-auto px-4 py-16">
+      <h2 class="about-heading">About <span class="about-gradient">Me</span></h2>
+      <p class="about-subtitle">A passionate developer from Pune, India, on a mission to create meaningful digital experiences.</p>
+      <div class="about-tabs">
+        <button class="about-tab active" id="tab-overview">Overview</button>
+        <button class="about-tab" id="tab-education">Education</button>
+        <button class="about-tab" id="tab-passion">Passion</button>
+        <button class="about-tab" id="tab-funfacts">Fun Facts</button>
+      </div>
+      <div class="about-tab-content" id="about-tab-content">
+        <div class="about-overview">
+          <h3>Hey there! 👋</h3>
+          <p>I'm Jayesh Deshmukh, a data enthusiast and full-stack developer currently pursuing engineering at RMDSTIC – SPPU. I love solving real-world problems through clean code, intuitive UI, and impactful data-driven solutions.</p>
+          <p>With experience in Python, ML, React, and Flask, I've built intelligent dashboards and AI-based apps. Always curious, I enjoy learning, collaborating, and pushing the boundaries of tech.</p>
+        </div>
+        <div class="education-timeline" style="display:none;">
+          <div class="timeline-item left">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-year">2021</div>
+              <div class="timeline-title">BE Information Technology</div>
+              <div class="timeline-desc">2021 - 2025</div>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-year">2021</div>
+              <div class="timeline-title">Higher Secondary</div>
+              <div class="timeline-desc">Completed in 2021</div>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-year">2019</div>
+              <div class="timeline-title">Senior Secondary</div>
+              <div class="timeline-desc">Completed in 2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-passion" style="display:none;">
+          <h3 class="passion-title">What Drives Me</h3>
+          <div class="passion-grid">
+            <div class="passion-item">
+              <span class="passion-emoji">🚀</span>
+              <div>
+                <div class="passion-heading">Innovation</div>
+                <div class="passion-desc">I love exploring new technologies and finding creative solutions to complex problems.</div>
+              </div>
+            </div>
+            <div class="passion-item">
+              <span class="passion-emoji">💡</span>
+              <div>
+                <div class="passion-heading">Entrepreneurship</div>
+                <div class="passion-desc">Passionate about startup culture and building products that make a difference.</div>
+              </div>
+            </div>
+            <div class="passion-item">
+              <span class="passion-emoji">🍩</span>
+              <div>
+                <div class="passion-heading">User Experience</div>
+                <div class="passion-desc">Believing that great technology should be intuitive and delightful to use.</div>
+              </div>
+            </div>
+            <div class="passion-item">
+              <span class="passion-emoji">📚</span>
+              <div>
+                <div class="passion-heading">Continuous Learning</div>
+                <div class="passion-desc">Currently diving deep into System Design and Advanced Data Structures.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-funfacts" style="display:none;">
+          <h3 class="funfacts-title">Fun Facts About Me</h3>
+          <div class="funfacts-grid">
+            <div class="funfact-item"><span class="funfact-emoji">☕</span> Coffee-driven coding sessions are my favorite</div>
+            <div class="funfact-item"><span class="funfact-emoji">🏆</span> Competitive programming enthusiast on LeetCode</div>
+            <div class="funfact-item"><span class="funfact-emoji">🎮</span> Love experimenting with game development in my free time</div>
+            <div class="funfact-item"><span class="funfact-emoji">🌐</span> Open source contributor and community builder</div>
+            <div class="funfact-item"><span class="funfact-emoji">🧮</span> Always exploring the latest tech trends and frameworks</div>
+            <div class="funfact-item"><span class="funfact-emoji">🎯</span> Goal: Build a successful SaaS product by 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="w-4/5 mx-auto px-4 py-16">
+      <h2 class="experience-heading">Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item left">
+          <span class="experience-dot"></span>
+          <div class="experience-content">
+            <div class="experience-org">D2B Innovations <span class="experience-location">(Pune)</span></div>
+            <div class="experience-duration">Jan 2025 - Mar 2025</div>
+            <ul class="experience-desc">
+              <li>Hands-on experience in real-time projects using Python, Pandas, Seaborn, and SQL.</li>
+              <li>Skilled in data analysis, visualization, and database management.</li>
+              <li>Developed machine learning models for insights and decision optimization.</li>
+              <li>Expertise in handling structured and unstructured data for efficient processing.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item right">
+          <span class="experience-dot"></span>
+          <div class="experience-content">
+            <div class="experience-org">Interstellar Scientific Pvt Ltd <span class="experience-location">(Pune)</span></div>
+            <div class="experience-duration">Feb 2023 – Aug 2023</div>
+            <ul class="experience-desc">
+              <li>Led a team of 4-5 members to develop a fully responsive website.</li>
+              <li>Developed 70% backend & 90% frontend, enhancing system performance.</li>
+              <li>Hands-on experience in HTML, CSS.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item left">
+          <span class="experience-dot"></span>
+          <div class="experience-content">
+            <div class="experience-org">Microsoft/PMI - KasNet Technologies Pvt Ltd <span class="experience-location">(Pune)</span></div>
+            <div class="experience-duration">Dec 2023 – Jan 2024</div>
+            <ul class="experience-desc">
+              <li>Optimized Azure Cloud, achieving 80% system performance boost.</li>
+              <li>Enhanced data security by 50% through advanced protocols.</li>
+              <li>Gained knowledge in SaaS, IaaS, and PaaS for cloud-based solutions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="w-full bg-transparent py-24 px-4">
+      <div class="bg-white rounded-2xl shadow px-6 py-6 w-full max-w-[1600px] mx-auto">
+        <h2>Projects</h2>
+        <div class="project-categories">
+          <button class="project-category active" data-category="dataviz">Data Visualization</button>
+          <button class="project-category" data-category="ml">ML</button>
+          <button class="project-category" data-category="frontend">Frontend</button>
+          <button class="project-category" data-category="fullstack">Full Stack</button>
+        </div>
+        <div class="project-card-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" id="project-card-grid">
+          <!-- Data Visualization Projects (default visible) -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="dataviz">
+            <!-- Project Title -->
+            <h3 class="text-lg font-bold mb-1">Pune City Analysis</h3>
+            <!-- Project Description -->
+            <p class="text-gray-700 text-xs mb-2">A comprehensive data visualization project exploring Pune city datasets. Interactive charts and insightful graphics reveal trends, patterns, and actionable insights for urban analysis and decision-making.</p>
+            <!-- Single Image Carousel -->
+            <div class="w-full flex justify-center mt-auto">
+              <div class="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl shadow border border-gray-200 bg-white flex items-center justify-center">
+                <img id="carousel-image" src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162529.png" alt="Insight" class="object-cover w-full h-full rounded-xl transition-all duration-500">
+              </div>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="dataviz">
+            <!-- Project Title -->
+            <h3 class="text-lg font-bold mb-1">Make in India (Imports)</h3>
+            <!-- Project Description -->
+            <p class="text-gray-700 text-xs mb-2">A data visualization project analyzing the impact and trends of the 'Make in India' initiative on imports. Explore insightful charts and graphics for a deeper understanding of India's import landscape.</p>
+            <!-- Single Image Carousel -->
+            <div class="w-full flex justify-center mt-auto">
+              <div class="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl shadow border border-gray-200 bg-white flex items-center justify-center">
+                <img id="carousel-image-makeinindia" src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161340.png" alt="Make in India Insight" class="object-cover w-full h-full rounded-xl transition-all duration-500">
+              </div>
+            </div>
+          </div>
+          <!-- ML Projects -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="ml" style="display: none;">
+            <!-- Project 1 placeholder for ML -->
+          </div>
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="ml" style="display: none;">
+            <!-- Project 2 placeholder for ML -->
+          </div>
+          <!-- Frontend Projects -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="frontend" style="display: none;">
+            <!-- Project 1 placeholder for Frontend -->
+          </div>
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="frontend" style="display: none;">
+            <!-- Project 2 placeholder for Frontend -->
+          </div>
+          <!-- Full Stack Projects -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="fullstack" style="display: none;">
+            <!-- Project 1 placeholder for Full Stack -->
+          </div>
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="fullstack" style="display: none;">
+            <!-- Project 2 placeholder for Full Stack -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tech-stack" class="w-4/5 mx-auto px-4 py-16">
+      <h2 class="techstack-heading">Tech <span class="techstack-gradient">Stack</span></h2>
+      <p class="techstack-subtitle">Technologies I use to build amazing digital experiences</p>
+      <div class="techstack-cards">
+        <div class="techstack-card">
+          <h3 class="techstack-card-title gradient-text">Languages</h3>
+          <div class="techstack-skill"><span>Python</span><span>95%</span><div class="techstack-bar bar-python"></div></div>
+          <div class="techstack-skill"><span>Machine Learning</span><span>85%</span><div class="techstack-bar bar-ml"></div></div>
+          <div class="techstack-skill"><span>JavaScript</span><span>90%</span><div class="techstack-bar bar-js"></div></div>
+          <div class="techstack-skill"><span>TypeScript</span><span>85%</span><div class="techstack-bar bar-ts"></div></div>
+          <div class="techstack-skill"><span>Java</span><span>80%</span><div class="techstack-bar bar-java"></div></div>
+          <div class="techstack-skill"><span>SQL</span><span>75%</span><div class="techstack-bar bar-sql"></div></div>
+          <div class="techstack-skill"><span>HTML5</span><span>95%</span><div class="techstack-bar bar-html"></div></div>
+          <div class="techstack-skill"><span>CSS3</span><span>90%</span><div class="techstack-bar bar-css"></div></div>
+        </div>
+        <div class="techstack-card">
+          <h3 class="techstack-card-title gradient-text">Frameworks & Libraries</h3>
+          <div class="techstack-skill"><span>Pandas</span><span>90%</span><div class="techstack-bar bar-pandas"></div></div>
+          <div class="techstack-skill"><span>NumPy</span><span>88%</span><div class="techstack-bar bar-numpy"></div></div>
+          <div class="techstack-skill"><span>Seaborn</span><span>85%</span><div class="techstack-bar bar-seaborn"></div></div>
+          <div class="techstack-skill"><span>Matplotlib</span><span>85%</span><div class="techstack-bar bar-matplotlib"></div></div>
+          <div class="techstack-skill"><span>Scikit-learn</span><span>80%</span><div class="techstack-bar bar-sklearn"></div></div>
+          <div class="techstack-skill"><span>React</span><span>92%</span><div class="techstack-bar bar-react"></div></div>
+          <div class="techstack-skill"><span>Redux Toolkit</span><span>85%</span><div class="techstack-bar bar-redux"></div></div>
+          <div class="techstack-skill"><span>Node.js</span><span>80%</span><div class="techstack-bar bar-node"></div></div>
+          <div class="techstack-skill"><span>Express</span><span>78%</span><div class="techstack-bar bar-express"></div></div>
+          <div class="techstack-skill"><span>TailwindCSS</span><span>88%</span><div class="techstack-bar bar-tailwind"></div></div>
+          <div class="techstack-skill"><span>Next.js</span><span>75%</span><div class="techstack-bar bar-next"></div></div>
+        </div>
+        <div class="techstack-card">
+          <h3 class="techstack-card-title gradient-text">Tools & Technologies</h3>
+          <div class="techstack-skill"><span>Flask</span><span>85%</span><div class="techstack-bar bar-flask"></div></div>
+          <div class="techstack-skill"><span>MongoDB</span><span>82%</span><div class="techstack-bar bar-mongo"></div></div>
+          <div class="techstack-skill"><span>Firebase</span><span>80%</span><div class="techstack-bar bar-firebase"></div></div>
+          <div class="techstack-skill"><span>Git</span><span>85%</span><div class="techstack-bar bar-git"></div></div>
+          <div class="techstack-skill"><span>Clerk</span><span>85%</span><div class="techstack-bar bar-clerk"></div></div>
+          <div class="techstack-skill"><span>Razorpay</span><span>80%</span><div class="techstack-bar bar-razorpay"></div></div>
+          <div class="techstack-skill"><span>Vercel</span><span>90%</span><div class="techstack-bar bar-vercel"></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="skills-carousels">
+      <div class="carousel-block">
+        <h2 class="tech-heading"><span class="about-gradient">Hands-on</span> Experience In</h2>
+        <div class="tech-carousel-wrapper">
+          <div class="tech-carousel hands-on-carousel" id="hands-on-carousel">
+            <div class="tech-card"><img src="logo/streamlit-logo.png" alt="Streamlit" class="tech-logo-img"><span class="tech-name">Streamlit</span></div>
+            <div class="tech-card"><img src="logo/powerbi-logo.png" alt="Power BI" class="tech-logo-img"><span class="tech-name">Power BI</span></div>
+            <div class="tech-card"><img src="logo/mysql-logo.png" alt="MySQL" class="tech-logo-img"><span class="tech-name">MySQL</span></div>
+            <div class="tech-card"><img src="logo/gtts-logo.png" alt="gTTS" class="tech-logo-img"><span class="tech-name">gTTS</span></div>
+            <div class="tech-card"><img src="logo/Introduction-to-Python-Matplotlib-Pyplot-Plotting.png" alt="Matplotlib" class="tech-logo-img"><span class="tech-name">Matplotlib</span></div>
+            <div class="tech-card"><img src="logo/seaborn-python-huong-dan.png" alt="Seaborn" class="tech-logo-img"><span class="tech-name">Seaborn</span></div>
+            <div class="tech-card"><img src="logo/numpy-tutorial.png" alt="NumPy" class="tech-logo-img"><span class="tech-name">NumPy</span></div>
+            <div class="tech-card"><img src="logo/pandas_logo-1080x675.webp" alt="Pandas" class="tech-logo-img"><span class="tech-name">Pandas</span></div>
+            <div class="tech-card"><img src="logo/SQL.jpg" alt="SQL" class="tech-logo-img"><span class="tech-name">SQL</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-block">
+        <h2 class="tech-heading"><span class="about-gradient">Technologies</span> I Work With</h2>
+        <div class="tech-carousel-wrapper">
+          <div class="tech-carousel techs-carousel" id="techs-carousel">
+            <div class="tech-card"><img src="logo/Python-Logo.png" alt="Python" class="tech-logo-img"><span class="tech-name">Python</span></div>
+            <div class="tech-card"><img src="logo/664-6644509_icon-react-js-logo-hd-png-download.png" alt="React" class="tech-logo-img"><span class="tech-name">React</span></div>
+            <div class="tech-card"><img src="logo/tailwind-css-logo-png_seeklogo-434090.png" alt="TailwindCSS" class="tech-logo-img"><span class="tech-name">TailwindCSS</span></div>
+            <div class="tech-card"><img src="logo/Flask-logo.png" alt="Flask" class="tech-logo-img"><span class="tech-name">Flask</span></div>
+            <div class="tech-card"><img src="logo/Git-Logo.png" alt="Git" class="tech-logo-img"><span class="tech-name">Git</span></div>
+            <div class="tech-card"><img src="logo/mongodb-logo-freelogovectors.net_.png" alt="MongoDB" class="tech-logo-img"><span class="tech-name">MongoDB</span></div>
+            <div class="tech-card"><img src="logo/JavaScript-Logo-2048x1280.png" alt="JavaScript" class="tech-logo-img"><span class="tech-name">JavaScript</span></div>
+            <div class="tech-card"><img src="logo/Typescript_logo_2020.svg.png" alt="TypeScript" class="tech-logo-img"><span class="tech-name">TypeScript</span></div>
+            <div class="tech-card"><img src="logo/Node.js-Logo.wine.png" alt="Node.js" class="tech-logo-img"><span class="tech-name">Node.js</span></div>
+            <div class="tech-card"><img src="logo/java-logo-transparent-free-png.webp" alt="Java" class="tech-logo-img"><span class="tech-name">Java</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="contact-heading">Contact <span class="about-gradient">Me</span></h2>
+      <p class="contact-subtitle">Have a project in mind? Let's build something amazing together</p>
+      <div class="contact-card-grid">
+        <!-- Contact Form Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Send me a message</h3>
+          <form id="contact-form" action="https://formsubmit.co/jayeshdeshmukh8772@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <!-- Get in Touch Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Get in Touch</h3>
+          <p>Feel free to reach out for collaborations, project ideas, or just to say hi!</p>
+          <div class="contact-info-block">
+            <div><strong>Email:</strong> <a href="mailto:jayeshdeshmukh8772@gmail.com">jayeshdeshmukh8772@gmail.com</a></div>
+            <div><strong>WhatsApp:</strong> <a href="https://wa.me/918625900256" target="_blank">+91 8625900256</a></div>
+          </div>
+        </div>
+        <!-- Follow Me Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Follow Me</h3>
+          <div class="contact-socials">
+            <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-6 w-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jayeshdeshmukh8772/" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://x.com/Jayesh_D_8772?s=09" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-text">© 2025 Jayesh Deshmukh. All rights reserved.<br>Made with ❤️ in Pune, India</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

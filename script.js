@@ -170,4 +170,65 @@ document.addEventListener('DOMContentLoaded', function () {
     current = (current + 1) % makeInIndiaImages.length;
     imgEl.src = makeInIndiaImages[current];
   }, 2000);
-}); 
+});
+
+// Hamburger menu toggle for mobile navbar
+const hamburger = document.getElementById('mobile-menu-toggle');
+const navLinks = document.querySelector('ul.nav-links');
+const overlay = document.getElementById('mobile-menu-overlay');
+
+function closeMobileMenu() {
+  navLinks.classList.remove('open');
+  hamburger.classList.remove('active');
+  overlay.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+}
+
+if (hamburger && navLinks && overlay) {
+  hamburger.addEventListener('click', function () {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+    overlay.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+  overlay.addEventListener('click', closeMobileMenu);
+}
+
+// Project card carousel logic (supports multiple carousels, auto-slide, and user interaction)
+function initProjectCardCarousels() {
+  const carousels = document.querySelectorAll('.pro-card-carousel');
+  carousels.forEach((carousel, carouselIdx) => {
+    const images = carousel.querySelectorAll('.carousel-img');
+    const leftArrow = carousel.querySelector('.carousel-arrow.left');
+    const rightArrow = carousel.querySelector('.carousel-arrow.right');
+    const indicators = carousel.parentElement.querySelectorAll('.carousel-indicators .carousel-dot');
+    let current = 0;
+    let timer;
+
+    function showImage(idx) {
+      images.forEach((img, i) => img.classList.toggle('active', i === idx));
+      indicators.forEach((dot, i) => dot.classList.toggle('active', i === idx));
+      current = idx;
+    }
+    function nextImage() {
+      showImage((current + 1) % images.length);
+    }
+    function prevImage() {
+      showImage((current - 1 + images.length) % images.length);
+    }
+    function startAutoSlide() {
+      clearInterval(timer);
+      timer = setInterval(nextImage, 2500);
+    }
+    // Arrow events
+    leftArrow.addEventListener('click', () => { prevImage(); startAutoSlide(); });
+    rightArrow.addEventListener('click', () => { nextImage(); startAutoSlide(); });
+    // Dot events
+    indicators.forEach((dot, i) => {
+      dot.addEventListener('click', () => { showImage(i); startAutoSlide(); });
+    });
+    // Start auto-slide
+    startAutoSlide();
+  });
+}
+document.addEventListener('DOMContentLoaded', initProjectCardCarousels); 

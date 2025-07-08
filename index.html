@@ -15,7 +15,13 @@
           <span class="slider"></span>
         </label>
       </div>
-      <ul>
+      <!-- Hamburger menu button for mobile -->
+      <button id="mobile-menu-toggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -23,21 +29,27 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="social-links">
-        <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-        </a>
         <a href="https://www.linkedin.com/in/jayeshdeshmukh8772/" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path></svg>
+        </a>
+        <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
         </a>
         <a href="https://x.com/Jayesh_D_8772?s=09" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/jayeshdeshmukh8772/" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+        </a>
+        <a href="https://wa.me/918625900256" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none"><g><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M23.472 19.339c-.355-.177-2.104-1.037-2.43-1.155-.326-.119-.563-.177-.8.177-.237.355-.919 1.155-1.127 1.392-.208.237-.415.266-.77.089-.355-.178-1.5-.553-2.858-1.763-1.057-.944-1.771-2.108-1.98-2.463-.208-.355-.022-.546.156-.723.16-.159.355-.414.533-.622.178-.208.237-.355.355-.592.119-.237.06-.444-.03-.622-.089-.178-.8-1.924-1.095-2.637-.288-.692-.581-.597-.8-.608-.208-.009-.444-.011-.68-.011-.237 0-.622.089-.949.444-.326.355-1.24 1.211-1.24 2.955 0 1.744 1.27 3.429 1.447 3.669.178.237 2.5 3.82 6.063 5.215.849.292 1.51.466 2.027.596.851.203 1.626.174 2.238.106.682-.076 2.104-.859 2.402-1.689.297-.83.297-1.541.208-1.689-.089-.148-.326-.237-.681-.414z" fill="#fff"/></g></svg>
         </a>
       </div>
     </nav>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
   </header>
   <main>
-    <section id="home" class="w-4/5 mx-auto px-4 py-16">
-      <!-- <section id="home" class="w-full px-4"> -->
+    <section id="home">
       <h1>Jayesh Deshmukh</h1>
       <div class="text-2xl md:text-4xl font-medium text-muted-foreground h-16 flex items-center justify-center">
         <span>I'm a </span>
@@ -191,29 +203,79 @@
         </div>
         <div class="project-card-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" id="project-card-grid">
           <!-- Data Visualization Projects (default visible) -->
-          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="dataviz">
-            <!-- Project Title -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden pro-card" data-category="dataviz">
             <h3 class="text-lg font-bold mb-1">Pune City Analysis</h3>
-            <!-- Project Description -->
-            <p class="text-gray-700 text-xs mb-2">A comprehensive data visualization project exploring Pune city datasets. Interactive charts and insightful graphics reveal trends, patterns, and actionable insights for urban analysis and decision-making.</p>
-            <!-- Single Image Carousel -->
-            <div class="w-full flex justify-center mt-auto">
-              <div class="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl shadow border border-gray-200 bg-white flex items-center justify-center">
-                <img id="carousel-image" src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162529.png" alt="Insight" class="object-cover w-full h-full rounded-xl transition-all duration-500">
-              </div>
+            <p class="pro-card-desc">Visualizing Pune city data with interactive charts for urban insights and trends.</p>
+            <div style="height: 1.2rem;"></div>
+            <div class="pro-card-tech mb-2">
+              <span class="tech-chip python">Python</span>
+              <span class="tech-chip pandas">Pandas</span>
+              <span class="tech-chip seaborn">Seaborn</span>
+              <span class="tech-chip matplotlib">Matplotlib</span>
             </div>
+            <div class="pro-card-carousel">
+              <button class="carousel-arrow left" aria-label="Previous image">&#8592;</button>
+              <div class="carousel-images">
+                <img src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162430.png" alt="Pune City Analysis Screenshot 1" class="carousel-img active">
+                <img src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162449.png" alt="Pune City Analysis Screenshot 2" class="carousel-img">
+                <img src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162514.png" alt="Pune City Analysis Screenshot 3" class="carousel-img">
+                <img src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162521.png" alt="Pune City Analysis Screenshot 4" class="carousel-img">
+                <img src="Projects/Data Visualisation/Pune City Analysis/Screenshot 2025-07-03 162529.png" alt="Pune City Analysis Screenshot 5" class="carousel-img">
+              </div>
+              <button class="carousel-arrow right" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="carousel-indicators" style="justify-content: center;">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <a href="#" target="_blank" class="pro-card-btn" style="margin-top: 0.5rem;">View Details</a>
           </div>
-          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="dataviz">
-            <!-- Project Title -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden pro-card" data-category="dataviz">
             <h3 class="text-lg font-bold mb-1">Make in India (Imports)</h3>
-            <!-- Project Description -->
-            <p class="text-gray-700 text-xs mb-2">A data visualization project analyzing the impact and trends of the 'Make in India' initiative on imports. Explore insightful charts and graphics for a deeper understanding of India's import landscape.</p>
-            <!-- Single Image Carousel -->
-            <div class="w-full flex justify-center mt-auto">
-              <div class="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl shadow border border-gray-200 bg-white flex items-center justify-center">
-                <img id="carousel-image-makeinindia" src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161340.png" alt="Make in India Insight" class="object-cover w-full h-full rounded-xl transition-all duration-500">
-              </div>
+            <p class="pro-card-desc">Charts and graphics on India's import trends under the 'Make in India' initiative.</p>
+            <div style="height: 1.2rem;"></div>
+            <div class="pro-card-tech mb-2">
+              <span class="tech-chip python">Python</span>
+              <span class="tech-chip pandas">Pandas</span>
+              <span class="tech-chip seaborn">Seaborn</span>
+              <span class="tech-chip matplotlib">Matplotlib</span>
             </div>
+            <div class="pro-card-carousel">
+              <button class="carousel-arrow left" aria-label="Previous image">&#8592;</button>
+              <div class="carousel-images">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161340.png" alt="Make in India Screenshot 1" class="carousel-img active">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161406.png" alt="Make in India Screenshot 2" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161420.png" alt="Make in India Screenshot 3" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161433.png" alt="Make in India Screenshot 4" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161444.png" alt="Make in India Screenshot 5" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161506.png" alt="Make in India Screenshot 6" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161521.png" alt="Make in India Screenshot 7" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161533.png" alt="Make in India Screenshot 8" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161550.png" alt="Make in India Screenshot 9" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161607.png" alt="Make in India Screenshot 10" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161621.png" alt="Make in India Screenshot 11" class="carousel-img">
+                <img src="Projects/Data Visualisation/Make in India (imports)/Screenshot 2025-07-04 161637.png" alt="Make in India Screenshot 12" class="carousel-img">
+              </div>
+              <button class="carousel-arrow right" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="carousel-indicators" style="justify-content: center;">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <a href="#" target="_blank" class="pro-card-btn" style="margin-top: 0.5rem;">View Details</a>
           </div>
           <!-- ML Projects -->
           <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="ml" style="display: none;">
@@ -223,11 +285,55 @@
             <!-- Project 2 placeholder for ML -->
           </div>
           <!-- Frontend Projects -->
-          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="frontend" style="display: none;">
-            <!-- Project 1 placeholder for Frontend -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden pro-card" data-category="frontend" style="">
+            <h3 class="text-lg font-bold mb-1">String Reverser Web App</h3>
+            <p class="pro-card-desc">A simple and interactive web app to reverse any string instantly. Clean UI, fast results, and built with core frontend skills.</p>
+            <div style="height: 1.2rem;"></div>
+            <div class="pro-card-tech mb-2">
+              <span class="tech-chip html">HTML</span>
+              <span class="tech-chip css">CSS</span>
+              <span class="tech-chip js">JavaScript</span>
+            </div>
+            <div class="pro-card-carousel">
+              <button class="carousel-arrow left" aria-label="Previous image">&#8592;</button>
+              <div class="carousel-images">
+                <img src="Projects/Frontend/String_Reverser/image1.png" alt="String Reverser Screenshot 1" class="carousel-img active">
+                <img src="Projects/Frontend/String_Reverser/image2.png" alt="String Reverser Screenshot 2" class="carousel-img">
+              </div>
+              <button class="carousel-arrow right" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="carousel-indicators" style="justify-content: center;">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <a href="https://string-reverser-6tt3.onrender.com/" target="_blank" class="pro-card-btn" style="margin-top: 0.5rem;">Go Live</a>
           </div>
-          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="frontend" style="display: none;">
-            <!-- Project 2 placeholder for Frontend -->
+          <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden pro-card" data-category="frontend" style="">
+            <h3 class="text-lg font-bold mb-1">Palindrome Checker Web App</h3>
+            <p class="pro-card-desc">A fast and intuitive web app to check if a string is a palindrome. Clean UI, instant results, and built with core frontend technologies.</p>
+            <div style="height: 1.2rem;"></div>
+            <div class="pro-card-tech mb-2">
+              <span class="tech-chip html">HTML</span>
+              <span class="tech-chip css">CSS</span>
+              <span class="tech-chip js">JavaScript</span>
+            </div>
+            <div class="pro-card-carousel">
+              <button class="carousel-arrow left" aria-label="Previous image">&#8592;</button>
+              <div class="carousel-images">
+                <img src="Projects/Frontend/palindrom_checker/image1.png" alt="Palindrome Checker Screenshot 1" class="carousel-img active">
+                <img src="Projects/Frontend/palindrom_checker/image2.png" alt="Palindrome Checker Screenshot 2" class="carousel-img">
+                <img src="Projects/Frontend/palindrom_checker/image3.png" alt="Palindrome Checker Screenshot 3" class="carousel-img">
+                <img src="Projects/Frontend/palindrom_checker/image4.png" alt="Palindrome Checker Screenshot 4" class="carousel-img">
+              </div>
+              <button class="carousel-arrow right" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="carousel-indicators" style="justify-content: center;">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <a href="https://palindrom-7xyh.onrender.com/" target="_blank" class="pro-card-btn" style="margin-top: 0.5rem;">Go Live</a>
           </div>
           <!-- Full Stack Projects -->
           <div class="project-card bg-white rounded-2xl shadow-xl border border-gray-200 p-4 flex flex-col items-start w-full max-w-sm mx-auto h-auto overflow-hidden" data-category="fullstack" style="display: none;">
@@ -248,11 +354,22 @@
           <div class="techstack-skill"><span>Python</span><span>95%</span><div class="techstack-bar bar-python"></div></div>
           <div class="techstack-skill"><span>Machine Learning</span><span>85%</span><div class="techstack-bar bar-ml"></div></div>
           <div class="techstack-skill"><span>JavaScript</span><span>90%</span><div class="techstack-bar bar-js"></div></div>
-          <div class="techstack-skill"><span>TypeScript</span><span>85%</span><div class="techstack-bar bar-ts"></div></div>
           <div class="techstack-skill"><span>Java</span><span>80%</span><div class="techstack-bar bar-java"></div></div>
           <div class="techstack-skill"><span>SQL</span><span>75%</span><div class="techstack-bar bar-sql"></div></div>
           <div class="techstack-skill"><span>HTML5</span><span>95%</span><div class="techstack-bar bar-html"></div></div>
           <div class="techstack-skill"><span>CSS3</span><span>90%</span><div class="techstack-bar bar-css"></div></div>
+        </div>
+        <div class="techstack-card">
+          <h3 class="techstack-card-title gradient-text">Data Science & ML</h3>
+          <div class="techstack-skill"><span>Data Visualization</span><span>90%</span><div class="techstack-bar bar-pandas"></div></div>
+          <div class="techstack-skill"><span>Data Analytics</span><span>88%</span><div class="techstack-bar bar-numpy"></div></div>
+          <div class="techstack-skill"><span>ML Model Training</span><span>85%</span><div class="techstack-bar bar-ml"></div></div>
+          <div class="techstack-skill"><span>Data Science</span><span>85%</span><div class="techstack-bar bar-sklearn"></div></div>
+          <div class="techstack-skill"><span>MediaPipe</span><span>80%</span><div class="techstack-bar bar-node"></div></div>
+          <div class="techstack-skill"><span>TensorFlow</span><span>80%</span><div class="techstack-bar bar-react"></div></div>
+          <div class="techstack-skill"><span>OpenCV</span><span>80%</span><div class="techstack-bar bar-express"></div></div>
+          <div class="techstack-skill"><span>YOLO</span><span>78%</span><div class="techstack-bar bar-next"></div></div>
+          <div class="techstack-skill"><span>ViT (Vision Transformer)</span><span>75%</span><div class="techstack-bar bar-html"></div></div>
         </div>
         <div class="techstack-card">
           <h3 class="techstack-card-title gradient-text">Frameworks & Libraries</h3>
@@ -262,21 +379,35 @@
           <div class="techstack-skill"><span>Matplotlib</span><span>85%</span><div class="techstack-bar bar-matplotlib"></div></div>
           <div class="techstack-skill"><span>Scikit-learn</span><span>80%</span><div class="techstack-bar bar-sklearn"></div></div>
           <div class="techstack-skill"><span>React</span><span>92%</span><div class="techstack-bar bar-react"></div></div>
-          <div class="techstack-skill"><span>Redux Toolkit</span><span>85%</span><div class="techstack-bar bar-redux"></div></div>
-          <div class="techstack-skill"><span>Node.js</span><span>80%</span><div class="techstack-bar bar-node"></div></div>
-          <div class="techstack-skill"><span>Express</span><span>78%</span><div class="techstack-bar bar-express"></div></div>
-          <div class="techstack-skill"><span>TailwindCSS</span><span>88%</span><div class="techstack-bar bar-tailwind"></div></div>
-          <div class="techstack-skill"><span>Next.js</span><span>75%</span><div class="techstack-bar bar-next"></div></div>
         </div>
         <div class="techstack-card">
           <h3 class="techstack-card-title gradient-text">Tools & Technologies</h3>
           <div class="techstack-skill"><span>Flask</span><span>85%</span><div class="techstack-bar bar-flask"></div></div>
-          <div class="techstack-skill"><span>MongoDB</span><span>82%</span><div class="techstack-bar bar-mongo"></div></div>
+          <div class="techstack-skill"><span>Streamlit</span><span>85%</span><div class="techstack-bar bar-python"></div></div>
+          <div class="techstack-skill"><span>WebSocket</span><span>78%</span><div class="techstack-bar bar-node"></div></div>
           <div class="techstack-skill"><span>Firebase</span><span>80%</span><div class="techstack-bar bar-firebase"></div></div>
           <div class="techstack-skill"><span>Git</span><span>85%</span><div class="techstack-bar bar-git"></div></div>
-          <div class="techstack-skill"><span>Clerk</span><span>85%</span><div class="techstack-bar bar-clerk"></div></div>
           <div class="techstack-skill"><span>Razorpay</span><span>80%</span><div class="techstack-bar bar-razorpay"></div></div>
           <div class="techstack-skill"><span>Vercel</span><span>90%</span><div class="techstack-bar bar-vercel"></div></div>
+          <div class="techstack-skill"><span>Cursor AI</span><span>75%</span><div class="techstack-bar bar-next"></div></div>
+        </div>
+        <div class="techstack-card">
+          <h3 class="techstack-card-title gradient-text">Soft Skills</h3>
+          <div class="techstack-skill"><span>Communication</span><span>90%</span><div class="techstack-bar bar-js"></div></div>
+          <div class="techstack-skill"><span>Team Collaboration</span><span>88%</span><div class="techstack-bar bar-react"></div></div>
+          <div class="techstack-skill"><span>Leadership</span><span>85%</span><div class="techstack-bar bar-node"></div></div>
+          <div class="techstack-skill"><span>Problem Solving</span><span>92%</span><div class="techstack-bar bar-python"></div></div>
+          <div class="techstack-skill"><span>Adaptability & Learning</span><span>90%</span><div class="techstack-bar bar-tailwind"></div></div>
+          <div class="techstack-skill"><span>Time Management</span><span>88%</span><div class="techstack-bar bar-sql"></div></div>
+          <div class="techstack-skill"><span>Public Speaking / Presentation</span><span>80%</span><div class="techstack-bar bar-html"></div></div>
+        </div>
+        <div class="techstack-card future-goals">
+          <h3 class="techstack-card-title gradient-text">Future Learning Goals <span style='font-size:1.2em;'>🚀</span></h3>
+          <div class="techstack-skill"><span>Node.js</span><span>40%</span><div class="techstack-bar bar-node"></div></div>
+          <div class="techstack-skill"><span>Express</span><span>40%</span><div class="techstack-bar bar-express"></div></div>
+          <div class="techstack-skill"><span>Next.js</span><span>40%</span><div class="techstack-bar bar-next"></div></div>
+          <div class="techstack-skill"><span>MongoDB</span><span>40%</span><div class="techstack-bar bar-mongo"></div></div>
+          <div class="techstack-skill"><span>TailwindCSS</span><span>40%</span><div class="techstack-bar bar-tailwind"></div></div>
         </div>
       </div>
     </section>
@@ -285,10 +416,10 @@
         <h2 class="tech-heading"><span class="about-gradient">Hands-on</span> Experience In</h2>
         <div class="tech-carousel-wrapper">
           <div class="tech-carousel hands-on-carousel" id="hands-on-carousel">
-            <div class="tech-card"><img src="logo/streamlit-logo.png" alt="Streamlit" class="tech-logo-img"><span class="tech-name">Streamlit</span></div>
-            <div class="tech-card"><img src="logo/powerbi-logo.png" alt="Power BI" class="tech-logo-img"><span class="tech-name">Power BI</span></div>
-            <div class="tech-card"><img src="logo/mysql-logo.png" alt="MySQL" class="tech-logo-img"><span class="tech-name">MySQL</span></div>
-            <div class="tech-card"><img src="logo/gtts-logo.png" alt="gTTS" class="tech-logo-img"><span class="tech-name">gTTS</span></div>
+            <div class="tech-card"><img src="logo/streamlitlogo.jpg" alt="Streamlit" class="tech-logo-img"><span class="tech-name">Streamlit</span></div>
+            <div class="tech-card"><img src="logo/Microsoft-Power-BI-Symbol.png" alt="Power BI" class="tech-logo-img"><span class="tech-name">Power BI</span></div>
+            <div class="tech-card"><img src="logo/mysql_PNG29.png" alt="MySQL" class="tech-logo-img"><span class="tech-name">MySQL</span></div>
+            <div class="tech-card"><img src="logo/tts.png" alt="gTTS" class="tech-logo-img"><span class="tech-name">gTTS</span></div>
             <div class="tech-card"><img src="logo/Introduction-to-Python-Matplotlib-Pyplot-Plotting.png" alt="Matplotlib" class="tech-logo-img"><span class="tech-name">Matplotlib</span></div>
             <div class="tech-card"><img src="logo/seaborn-python-huong-dan.png" alt="Seaborn" class="tech-logo-img"><span class="tech-name">Seaborn</span></div>
             <div class="tech-card"><img src="logo/numpy-tutorial.png" alt="NumPy" class="tech-logo-img"><span class="tech-name">NumPy</span></div>
@@ -307,7 +438,7 @@
             <div class="tech-card"><img src="logo/Flask-logo.png" alt="Flask" class="tech-logo-img"><span class="tech-name">Flask</span></div>
             <div class="tech-card"><img src="logo/Git-Logo.png" alt="Git" class="tech-logo-img"><span class="tech-name">Git</span></div>
             <div class="tech-card"><img src="logo/mongodb-logo-freelogovectors.net_.png" alt="MongoDB" class="tech-logo-img"><span class="tech-name">MongoDB</span></div>
-            <div class="tech-card"><img src="logo/JavaScript-Logo-2048x1280.png" alt="JavaScript" class="tech-logo-img"><span class="tech-name">JavaScript</span></div>
+            <div class="tech-card"><img src="logo/JavaScript-Logo.png" alt="JavaScript" class="tech-logo-img"><span class="tech-name">JavaScript</span></div>
             <div class="tech-card"><img src="logo/Typescript_logo_2020.svg.png" alt="TypeScript" class="tech-logo-img"><span class="tech-name">TypeScript</span></div>
             <div class="tech-card"><img src="logo/Node.js-Logo.wine.png" alt="Node.js" class="tech-logo-img"><span class="tech-name">Node.js</span></div>
             <div class="tech-card"><img src="logo/java-logo-transparent-free-png.webp" alt="Java" class="tech-logo-img"><span class="tech-name">Java</span></div>
@@ -340,19 +471,21 @@
             <div><strong>Email:</strong> <a href="mailto:jayeshdeshmukh8772@gmail.com">jayeshdeshmukh8772@gmail.com</a></div>
             <div><strong>WhatsApp:</strong> <a href="https://wa.me/918625900256" target="_blank">+91 8625900256</a></div>
           </div>
-        </div>
-        <!-- Follow Me Card -->
-        <div class="contact-card">
-          <h3 class="contact-card-title">Follow Me</h3>
-          <div class="contact-socials">
-            <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" class="icon-link social-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-6 w-6"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-            </a>
+          <div class="contact-socials" style="margin-top: 1.2rem; justify-content: flex-start;">
             <a href="https://www.linkedin.com/in/jayeshdeshmukh8772/" target="_blank" class="icon-link social-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path></svg>
+            </a>
+            <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
             </a>
             <a href="https://x.com/Jayesh_D_8772?s=09" target="_blank" class="icon-link social-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/jayeshdeshmukh8772/" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/918625900256" target="_blank" class="icon-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="none"><g><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M23.472 19.339c-.355-.177-2.104-1.037-2.43-1.155-.326-.119-.563-.177-.8.177-.237.355-.919 1.155-1.127 1.392-.208.237-.415.266-.77.089-.355-.178-1.5-.553-2.858-1.763-1.057-.944-1.771-2.108-1.98-2.463-.208-.355-.022-.546.156-.723.16-.159.355-.414.533-.622.178-.208.237-.355.355-.592.119-.237.06-.444-.03-.622-.089-.178-.8-1.924-1.095-2.637-.288-.692-.581-.597-.8-.608-.208-.009-.444-.011-.68-.011-.237 0-.622.089-.949.444-.326.355-1.24 1.211-1.24 2.955 0 1.744 1.27 3.429 1.447 3.669.178.237 2.5 3.82 6.063 5.215.849.292 1.51.466 2.027.596.851.203 1.626.174 2.238.106.682-.076 2.104-.859 2.402-1.689.297-.83.297-1.541.208-1.689-.089-.148-.326-.237-.681-.414z" fill="#fff"/></g></svg>
             </a>
           </div>
         </div>
@@ -360,6 +493,23 @@
     </section>
   </main>
   <footer>
+    <div class="footer-socials" style="margin-bottom: 0.5rem;">
+      <a href="https://www.linkedin.com/in/jayeshdeshmukh8772/" target="_blank" class="icon-link social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path></svg>
+      </a>
+      <a href="https://github.com/Jayeshdeshmukh8772" target="_blank" class="icon-link social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+      </a>
+      <a href="https://x.com/Jayesh_D_8772?s=09" target="_blank" class="icon-link social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"></path></svg>
+      </a>
+      <a href="https://www.instagram.com/jayeshdeshmukh8772/" target="_blank" class="icon-link social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+      </a>
+      <a href="https://wa.me/918625900256" target="_blank" class="icon-link social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="none"><g><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M23.472 19.339c-.355-.177-2.104-1.037-2.43-1.155-.326-.119-.563-.177-.8.177-.237.355-.919 1.155-1.127 1.392-.208.237-.415.266-.77.089-.355-.178-1.5-.553-2.858-1.763-1.057-.944-1.771-2.108-1.98-2.463-.208-.355-.022-.546.156-.723.16-.159.355-.414.533-.622.178-.208.237-.355.355-.592.119-.237.06-.444-.03-.622-.089-.178-.8-1.924-1.095-2.637-.288-.692-.581-.597-.8-.608-.208-.009-.444-.011-.68-.011-.237 0-.622.089-.949.444-.326.355-1.24 1.211-1.24 2.955 0 1.744 1.27 3.429 1.447 3.669.178.237 2.5 3.82 6.063 5.215.849.292 1.51.466 2.027.596.851.203 1.626.174 2.238.106.682-.076 2.104-.859 2.402-1.689.297-.83.297-1.541.208-1.689-.089-.148-.326-.237-.681-.414z" fill="#fff"/></g></svg>
+      </a>
+    </div>
     <div class="footer-text">© 2025 Jayesh Deshmukh. All rights reserved.<br>Made with ❤️ in Pune, India</div>
   </footer>
   <script src="script.js"></script>

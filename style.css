@@ -1596,9 +1596,17 @@ footer {
     gap: 10px;
     margin-left: 8px;
   }
-  .hamburger {
-    display: flex;
-    margin-left: 8px;
+  .social-icons-mobile { display: none !important; }
+  .social-links.desktop-only { display: flex !important; }
+  @media (max-width: 768px) {
+    ul.nav-links.open .social-icons-mobile { display: block !important; margin: 1.2rem 0 0 0; width: 100%; }
+    ul.nav-links.open .social-icons-mobile .social-links {
+      display: flex !important;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0.5rem 0 0.5rem 0;
+      border-top: 1px solid #e0e0e0;
+    }
   }
   nav ul.nav-links {
     display: none;
@@ -1767,30 +1775,4 @@ body.dark-mode .contact-info-block, body.dark-mode .project-card p, body.dark-mo
 }
 .tech-chip.html { background: #e34c26; color: #fff; }
 .tech-chip.css { background: #264de4; color: #fff; }
-.tech-chip.js { background: #f7df1e; color: #222; }
-
-.pro-card-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: linear-gradient(90deg, #a259ff 60%, #00bcd4 100%);
-  color: #fff;
-  border-radius: 8px;
-  padding: 0.7rem 1.5rem;
-  font-weight: 600;
-  font-size: 1.05rem;
-  text-decoration: none;
-  margin-top: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 2px 8px rgba(162,89,255,0.08);
-  transition: background 0.2s, transform 0.15s;
-  cursor: pointer;
-  border: none;
-}
-.pro-card-btn:hover, .pro-card-btn:focus {
-  background: linear-gradient(90deg, #7c3aed 60%, #00bcd4 100%);
-  transform: scale(1.035);
-  box-shadow: 0 4px 12px rgba(162,89,255,0.12);
-  outline: none;
-} 
+.tech-chip.js { background: #f7df1e; color: #222; } 

@@ -92,25 +92,27 @@ aboutTabs.forEach(tab => {
 // Show overview by default
 showTab(document.getElementById('tab-overview'));
 
-// Project category switching (card grid version)
-const projectCategories = document.querySelectorAll('.project-category');
-const projectCards = document.querySelectorAll('.project-card');
+// Project tabs logic (show one section at a time)
+document.addEventListener('DOMContentLoaded', function() {
+  const projectTabBtns = document.querySelectorAll('.project-tab-btn');
+  const projectTabSections = document.querySelectorAll('.project-section');
 
-function showProjectCategory(category) {
-  projectCategories.forEach(btn => btn.classList.remove('active'));
-  document.querySelector(`.project-category[data-category="${category}"]`).classList.add('active');
-  projectCards.forEach(card => {
-    card.style.display = (card.getAttribute('data-category') === category) ? '' : 'none';
-  });
-}
+  function showProjectTab(tab) {
+    projectTabBtns.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.project-tab-btn[data-tab="${tab}"]`).classList.add('active');
+    projectTabSections.forEach(section => {
+      section.style.display = section.getAttribute('data-section') === tab ? '' : 'none';
+    });
+  }
 
-projectCategories.forEach(btn => {
-  btn.addEventListener('click', () => {
-    showProjectCategory(btn.getAttribute('data-category'));
+  projectTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      showProjectTab(btn.getAttribute('data-tab'));
+    });
   });
+  // Show Data Visualization tab by default
+  showProjectTab('dataviz');
 });
-// Show Data Visualization by default
-showProjectCategory('dataviz');
 
 // Smooth scroll for Experience navbar link
 const navbarLinks = document.querySelectorAll('nav ul li a');
@@ -231,4 +233,59 @@ function initProjectCardCarousels() {
     startAutoSlide();
   });
 }
-document.addEventListener('DOMContentLoaded', initProjectCardCarousels); 
+document.addEventListener('DOMContentLoaded', initProjectCardCarousels);
+
+// === Custom Mobile Menu Logic ===
+function handleCustomMobileMenuDisplay() {
+  const trigger = document.getElementById('customMobileMenuTrigger');
+  const menu = document.getElementById('customMobileMenu');
+  const overlay = document.getElementById('customMobileMenuOverlay');
+  const nav = document.querySelector('nav');
+  const hamburger = document.getElementById('mobile-menu-toggle');
+  const navLinks = document.querySelector('ul.nav-links');
+
+  function isMobile() {
+    return window.innerWidth <= 700;
+  }
+
+  function showCustomMenu() {
+    menu.classList.add('open');
+    overlay.classList.add('open');
+    menu.style.display = 'flex';
+    overlay.style.display = 'block';
+    // Hide default hamburger/nav-links
+    if (hamburger) hamburger.style.display = 'none';
+    if (navLinks) navLinks.style.display = 'none';
+  }
+  function hideCustomMenu() {
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    setTimeout(() => {
+      menu.style.display = 'none';
+      overlay.style.display = 'none';
+    }, 400);
+    if (hamburger) hamburger.style.display = '';
+    if (navLinks) navLinks.style.display = '';
+  }
+  function updateVisibility() {
+    if (isMobile()) {
+      trigger.style.display = 'flex';
+      hideCustomMenu();
+    } else {
+      trigger.style.display = 'none';
+      hideCustomMenu();
+    }
+  }
+  if (trigger && menu && overlay) {
+    trigger.addEventListener('click', showCustomMenu);
+    overlay.addEventListener('click', hideCustomMenu);
+    // Close menu on nav link click
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', hideCustomMenu);
+    });
+    window.addEventListener('resize', updateVisibility);
+    updateVisibility();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', handleCustomMobileMenuDisplay); 
